@@ -82,7 +82,7 @@ export const Hero: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-jungle/80 to-transparent z-10 mix-blend-multiply pointer-events-none"></div>
 
               <img
-                src="/public/images/Foto_perfil.png"
+                src="/images/Foto_perfil.PNG"
                 alt="Juliana Linares Puerta"
                 className="w-full h-full object-cover object-top transform transition-transform duration-[2s] ease-out group-hover:scale-110"
               />
