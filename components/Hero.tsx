@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 export const Hero: React.FC = () => {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center relative px-6 py-20 overflow-hidden">
-      
+
       {/* Content Wrapper */}
       <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center z-10">
-        
+
         {/* Text Side - The Manifesto */}
         <div className="order-2 lg:order-1 space-y-8">
           <motion.div
@@ -24,7 +24,7 @@ export const Hero: React.FC = () => {
               }
             }}
           >
-            <motion.h1 
+            <motion.h1
               className="text-5xl md:text-7xl lg:text-8xl font-serif text-bone leading-tight tracking-tight"
               variants={{
                 hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
@@ -35,7 +35,7 @@ export const Hero: React.FC = () => {
               <span className="italic text-matcha">con Pulso.</span>
             </motion.h1>
 
-            <motion.div 
+            <motion.div
               className="h-px w-24 bg-matcha/50 mt-8 mb-8"
               variants={{
                 hidden: { width: 0, opacity: 0 },
@@ -43,7 +43,7 @@ export const Hero: React.FC = () => {
               }}
             />
 
-            <motion.h2 
+            <motion.h2
               className="text-xl md:text-2xl font-light text-bone/80 max-w-lg leading-relaxed"
               variants={{
                 hidden: { opacity: 0 },
@@ -66,7 +66,7 @@ export const Hero: React.FC = () => {
         </div>
 
         {/* Visual Side - Organic Frame */}
-        <motion.div 
+        <motion.div
           className="order-1 lg:order-2 flex justify-center lg:justify-end"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -75,17 +75,17 @@ export const Hero: React.FC = () => {
           <div className="relative group w-72 h-72 md:w-96 md:h-96">
             {/* Organic Shapes behind */}
             <div className="absolute inset-0 bg-matcha/10 rounded-[40%_60%_70%_30%/40%_50%_60%_50%] blur-2xl animate-pulse-slow"></div>
-            
+
             {/* Main Image Container */}
             <div className="relative w-full h-full overflow-hidden border border-white/10 rounded-[2rem] shadow-2xl transition-transform duration-700 hover:scale-[1.02]">
-               {/* Overlay for depth */}
-               <div className="absolute inset-0 bg-gradient-to-t from-jungle/80 to-transparent z-10 mix-blend-multiply pointer-events-none"></div>
-               
-               <img 
-                 src="https://i.pinimg.com/280x280_RS/78/cf/78/78cf78ccdfebe684ba03aab598e33674.jpg" 
-                 alt="Juliana Linares Puerta" 
-                 className="w-full h-full object-cover object-top transform transition-transform duration-[2s] ease-out group-hover:scale-110"
-               />
+              {/* Overlay for depth */}
+              <div className="absolute inset-0 bg-gradient-to-t from-jungle/80 to-transparent z-10 mix-blend-multiply pointer-events-none"></div>
+
+              <img
+                src="/public/images/Foto_perfil.png"
+                alt="Juliana Linares Puerta"
+                className="w-full h-full object-cover object-top transform transition-transform duration-[2s] ease-out group-hover:scale-110"
+              />
             </div>
           </div>
         </motion.div>
@@ -93,18 +93,18 @@ export const Hero: React.FC = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <motion.div 
+      <motion.div
         className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2, duration: 1 }}
       >
         <div className="w-[1px] h-16 bg-gradient-to-b from-matcha/0 via-matcha to-matcha/0 overflow-hidden relative">
-           <motion.div 
-             className="absolute top-0 left-0 w-full bg-white h-1/2"
-             animate={{ top: ['-100%', '100%'] }}
-             transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-           />
+          <motion.div
+            className="absolute top-0 left-0 w-full bg-white h-1/2"
+            animate={{ top: ['-100%', '100%'] }}
+            transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+          />
         </div>
       </motion.div>
 
