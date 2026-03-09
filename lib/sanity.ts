@@ -2,7 +2,7 @@ import { createClient } from '@sanity/client'
 import imageUrlBuilder from '@sanity/image-url'
 
 export const client = createClient({
-    projectId: 'YOUR_PROJECT_ID', // Replaced by user later
+    projectId: 'km3k177u', // Replaced with generated ID
     dataset: 'production',
     useCdn: true, // `false` if you want to ensure fresh data
     apiVersion: '2023-05-03',

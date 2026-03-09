@@ -6,7 +6,7 @@ export default defineConfig({
     name: 'default',
     title: 'Juliana CV Admin',
 
-    projectId: 'YOUR_PROJECT_ID', // Replaced by user later
+    projectId: 'km3k177u', // Replaced with generated ID
     dataset: 'production',
 
     basePath: '/admin',
